@@ -123,6 +123,7 @@ any .cpp file with an entrypoint is an app.
 
 For example any file containing a main() function or a macro instantiating a main() function ( *e.g.* unit testing frameworks ) will be compiled as an application. 
 
+.. HINT:: If you want a faster compilation you can help nxxm to find the entrypoint app . By naming your **.main.cpp file** (for example: banana.main.cpp).This will allow nnxm to understand that the file is the entry point in a very quick way
 .. HINT:: apps are always linked to the project library.
 .. HINT:: if others .cpp files are aside in the same or deeper filesystem directory they get linked with the applications in question. Except when those directories are part of the explicitely declared "s"/-s project library dir.
 
